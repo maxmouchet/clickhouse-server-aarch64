@@ -12,4 +12,4 @@ RUN curl -O 'https://builds.clickhouse.tech/master/aarch64/clickhouse' && \
     curl -O 'https://raw.githubusercontent.com/ClickHouse/ClickHouse/master/programs/server/users.xml' && \
     chmod +x ./clickhouse
 
-ENTRYPOINT ["/app/clickhouse", "server"]
+ENTRYPOINT ["/app/clickhouse", "server", "--", "--listen_host", "0.0.0.0"]

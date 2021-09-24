@@ -1,2 +1,2 @@
-# clickhouse-server-aarch64
-AArch64 clickhouse-server Docker image.
+# clickhouse-aarch64
+AArch64 ClickHouse Docker image.
